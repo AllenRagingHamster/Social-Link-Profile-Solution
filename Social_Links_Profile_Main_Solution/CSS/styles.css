@@ -1,0 +1,161 @@
+/*Default settings for padding and margin*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(23, 23, 23);
+}
+
+/*Base resolution and outer container property*/
+.outer-container-bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Base resolution and Background for the inner container*/
+.inner-container-bg{
+    background-color:rgb(38, 38, 38);
+    width: 300px;
+    border-radius: 16px;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*Profile image properties*/
+#profileImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/*Profile name properties*/
+.profileName{
+    color: white;
+    font-family: 'sans-serif', Arial;
+    font-size: 20px;
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+}
+
+/*City address properties*/
+.cityAddress{
+    color:rgb(153, 205, 50);
+    font-family: 'sans-serif', Arial;
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    padding-top:8px;
+    margin-bottom: 20px;
+}
+
+/*Profile description properties*/
+.profileDescription{
+    color: rgba(255, 255, 255, 0.699);
+    font-family:'open-sans', sans-serif;
+    font-weight:300 !important;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top:5px;
+    margin-bottom: 20px;
+}
+
+/*Button properties*/
+.gitHub-Button,
+.frontendMentor-Button,
+.linkedIn-Button,
+.facebook-Button,
+.youtube-Button{
+    background-color:rgb(56, 56, 56);
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-family: 'sans-serif', Arial;
+    font-weight: 550;
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/*Button Margin excluding github*/
+.frontendMentor-Button,
+.linkedIn-Button,
+.facebook-Button,
+.youtube-Button{
+    margin-top: 15px;
+}
+
+/*Table view of 780px and below*/
+@media (max-width: 780px){
+    .inner-container-bg{
+        width: 80%;
+        margin: 50px auto;
+    }
+    #profileImage{
+        width: 80px;
+        height: 80px;
+    }
+    .profileName{
+        font-size: 18px;
+    }
+    .cityAddress{
+        font-size: 12px;
+    }
+    .profileDescription{
+        font-size: 9px;
+    }
+    .gitHub-Button,
+    .frontendMentor-Button,
+    .linkedIn-Button,
+    .facebook-Button,
+    .youtube-Button{
+        width: 100%;
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
+
+/*Mobile view of 480px and below*/
+@media (max-width: 480px){
+    .inner-container-bg{
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+    #profileImage{
+        width: 70px;
+        height: 70px;
+    }
+    .profileName{
+        font-size: 16px;
+    }
+    .cityAddress{
+        font-size: 11px;
+    }
+    .profileDescription{
+        font-size: 8px;
+    }
+    .gitHub-Button,
+    .frontendMentor-Button,
+    .linkedIn-Button,
+    .facebook-Button,
+    .youtube-Button{
+        width: 100%;
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+}
